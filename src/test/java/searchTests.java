@@ -8,8 +8,9 @@ public class searchTests {
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");
-        $("[name=q]").setValue("yandex").pressEnter();
-        $("[id=search]").shouldHave(text("https://yandex.ru"));
+        $("[name=q]").setValue("ozon").pressEnter();
+        $(".iUh30 tjvcx").click();
+        $(".gc9").shouldHave(text("Ozon fresh"));
     }
 
 }
